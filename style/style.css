@@ -400,4 +400,9 @@ a {
   }
 }
 
+.landing-img-size {
+  max-width: 600px;
+  min-height: 555px;
+}
+
 /*# sourceMappingURL=style.css.map */
