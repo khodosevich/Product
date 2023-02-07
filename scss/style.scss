@@ -58,10 +58,13 @@ button {
 //------------------Header---------------------//
 
 .header {
-    max-height: 80px;
+    max-height: 100px;
  
-    background: #FFFFFF;
+    background: #ffffff;
     padding: 20px 0;   
+
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.25);
+   
 }
 
 .menu-bar-and-btns{
@@ -142,13 +145,13 @@ button {
 
     @media (max-width:570px){
         &{
-            margin-left: 90px;
+            margin-left: 120px;
         }
      }
 
      @media (max-width:390px){
         &{
-            margin-left: 40px;
+            margin-left: 60px;
         }
      }
     
@@ -169,13 +172,20 @@ button {
             flex-wrap: wrap;
         }
         }
+       
    
     @media (max-width:570px){
     &{
         margin-bottom: 20px;
     }
-}
+
+    }
    
+    @media (max-width:400px){
+        &{
+           margin: -10px 0;
+        }
+    }
 
 }
 .menu-item {
