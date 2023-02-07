@@ -71,29 +71,33 @@ button {
 .navigation{
     display: flex;
 
-
     @media (max-width:1160px){
         &{
-            padding: 0 10px;
-           
+            padding: 0 10px;  
         }
    }
+
+   @media (max-width:450px){
+    &{
+        padding: 10px;  
+    }
+}
 
 }
 .logo {
     display: flex;
     align-items: center;
+
+    @media (max-width:600px){
+        &{
+            margin-top: -20px;
+        }
+   }
+
 }
 .logo-img {
-    @media (max-width:570px) {
-        &{
-            
-        }
-    }
-
-    @media (max-width:390px) {
-       
-    }
+    max-width: 100%;
+    max-height: 100%;
 
 }
 .logo-title {
@@ -103,17 +107,7 @@ button {
     color: #173A56;
     margin-left: 16px;
 
-    @media (max-width:570px) {
-        &{
-            font-size: 50px;
-        }
-    }
 
-    @media (max-width:390px) {
-        &{
-            font-size: 70px;
-        }
-    }
 }
 .nav {
     
@@ -136,20 +130,25 @@ button {
 
    @media (max-width:1060px){
     &{
-        margin-left: 100px;
+        margin-left: 120px;
     }
-}
-
+    }
+    
+    @media (max-width:960px){
+        &{
+            margin-left: 100px;
+        }
+        }
 
     @media (max-width:570px){
         &{
-            margin-left: 170px;
+            margin-left: 90px;
         }
      }
 
      @media (max-width:390px){
         &{
-            margin-left: 100px;
+            margin-left: 40px;
         }
      }
     
@@ -192,23 +191,11 @@ button {
 
     @media (max-width:800px){
         &{
-            font-size: 25px;
+            font-size: 15px;
         }
    }
    
-    @media (max-width:570px){
-         &{
-             font-size: 35px;
-             margin-top: 10px;
-         }
-    }
-
-    @media (max-width:390px){
-        &{
-            font-size: 30px;
-            margin-top: 13px;
-        }
-   }
+   
 
 }
 .active-menu-item {
@@ -245,7 +232,7 @@ button {
 
     margin-right: 24px;
 
-    @media (max-width:570px){
+    @media (max-width:946px){
         &{
             display: none;
         }
@@ -280,7 +267,7 @@ button {
         }
    }
 
-   @media (max-width:570px){
+   @media (max-width:946px){
         &{
             display: none;
         }
@@ -317,17 +304,25 @@ button {
 
 .landing-info {
     margin-top: 150px;
+    min-width: 518px;
 
-    @media (max-width:1167px){
+    @media (max-width:1148px){
         &{
-            margin-left: 20px;
+            min-width: 318px;
+           margin-left:10px;
+           margin-right: 10px;
         }
     }
 
     @media (max-width:767px){
         &{
-            order: 2;
-            margin: 30px;
+            order: 2; 
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            text-align: center;
+            align-items: center;
         }
     }
 }
@@ -341,24 +336,18 @@ button {
     color: #22343D;
     margin-bottom: 18px;
 
-    @media (max-width:768px){
-        &{
-            min-width: 518px;
-            font-size: 45px;
-        }
-    }
 
     @media (max-width:578px){
         &{
-            margin-left:100px;
+            
             text-align: center;
-            font-size: 50x;
+            font-size: 36px;
         }
     }
 
     @media (max-width:380px){
         &{
-            font-size: 55px;
+            font-size: 34px;
         }
     }
 }
@@ -373,24 +362,24 @@ button {
 
     @media (max-width:768px){
         &{
-            min-width: 458px;
+            max-width: 458px;
             font-size: 24px;
         }
     }
 
     @media (max-width:578px){
         &{
-            
-            margin-left:100px;
+            max-width: 328px;
             text-align: center;
-            font-size: 24px;
+            font-size: 18px;
             color: black;
         }
     }
 
     @media (max-width:380px){
         &{
-            font-size: 30px;
+            max-width: 300px;
+            font-size: 16px;
             color: black;
         }
     }
@@ -398,15 +387,6 @@ button {
 }
 .buttons-landing {
     display: flex;
-
- 
-
-    @media (max-width:578px){
-        &{
-            margin-left:150px;
-        
-        }
-    }   
 }
 .btn-start {
 }
@@ -431,27 +411,26 @@ button {
     color: #FFFFFF;
 
 
-    @media (max-width:578px){
-        &{
-            
-            font-size: 18px;
-        }
-    }
-
     @media (max-width:400px){
         &{
-            font-size: 20px;
+            max-width: 140px;
+            max-height: 53px;
+            font-size: 14px;
         }
     }
-
 
 }
 .btn-watch {
     display: flex;
     align-items: center;
-    min-width: 161px;
+    max-width: 161px;
     margin-left: 30px;
 
+    @media (max-width:400px){
+        &{
+            margin-left: 10px;
+        }
+    }
 
 }
 .img-watch {
@@ -466,16 +445,9 @@ button {
     text-decoration-line: underline;
     color: #02897A;
 
-    @media (max-width:578px){
-        &{
-            
-            font-size: 18px;
-        }
-    }
-
     @media (max-width:400px){
         &{
-            font-size: 20px;
+            font-size: 14px;
         }
     }
 
@@ -507,8 +479,9 @@ button {
 }
 
 .landing-img-size{
-    max-width: 600px;
-    min-height: 555px;
+    max-width: 100%;
+    max-height:100%;
+
 }
 
 //-------------------???????----------------------------//

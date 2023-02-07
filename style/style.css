@@ -63,10 +63,25 @@ a {
     padding: 0 10px;
   }
 }
+@media (max-width: 450px) {
+  .navigation {
+    padding: 10px;
+  }
+}
 
 .logo {
   display: flex;
   align-items: center;
+}
+@media (max-width: 600px) {
+  .logo {
+    margin-top: -20px;
+  }
+}
+
+.logo-img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .logo-title {
@@ -75,16 +90,6 @@ a {
   line-height: 28px;
   color: #173A56;
   margin-left: 16px;
-}
-@media (max-width: 570px) {
-  .logo-title {
-    font-size: 50px;
-  }
-}
-@media (max-width: 390px) {
-  .logo-title {
-    font-size: 70px;
-  }
 }
 
 .menu-bar-and-btns {
@@ -102,17 +107,22 @@ a {
 }
 @media (max-width: 1060px) {
   .menu {
+    margin-left: 120px;
+  }
+}
+@media (max-width: 960px) {
+  .menu {
     margin-left: 100px;
   }
 }
 @media (max-width: 570px) {
   .menu {
-    margin-left: 170px;
+    margin-left: 90px;
   }
 }
 @media (max-width: 390px) {
   .menu {
-    margin-left: 100px;
+    margin-left: 40px;
   }
 }
 
@@ -147,19 +157,7 @@ a {
 }
 @media (max-width: 800px) {
   .menu-item {
-    font-size: 25px;
-  }
-}
-@media (max-width: 570px) {
-  .menu-item {
-    font-size: 35px;
-    margin-top: 10px;
-  }
-}
-@media (max-width: 390px) {
-  .menu-item {
-    font-size: 30px;
-    margin-top: 13px;
+    font-size: 15px;
   }
 }
 
@@ -192,7 +190,7 @@ a {
   transition: all 0.4s;
   background-color: #e2e0e0;
 }
-@media (max-width: 570px) {
+@media (max-width: 946px) {
   .button-sign-in {
     display: none;
   }
@@ -223,7 +221,7 @@ a {
     margin-right: 100px;
   }
 }
-@media (max-width: 570px) {
+@media (max-width: 946px) {
   .button-sign-UP {
     display: none;
   }
@@ -251,16 +249,24 @@ a {
 
 .landing-info {
   margin-top: 150px;
+  min-width: 518px;
 }
-@media (max-width: 1167px) {
+@media (max-width: 1148px) {
   .landing-info {
-    margin-left: 20px;
+    min-width: 318px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 @media (max-width: 767px) {
   .landing-info {
     order: 2;
-    margin: 30px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
   }
 }
 
@@ -272,22 +278,15 @@ a {
   color: #22343D;
   margin-bottom: 18px;
 }
-@media (max-width: 768px) {
-  .landing-info-title {
-    min-width: 518px;
-    font-size: 45px;
-  }
-}
 @media (max-width: 578px) {
   .landing-info-title {
-    margin-left: 100px;
     text-align: center;
-    font-size: 50x;
+    font-size: 36px;
   }
 }
 @media (max-width: 380px) {
   .landing-info-title {
-    font-size: 55px;
+    font-size: 34px;
   }
 }
 
@@ -300,32 +299,28 @@ a {
 }
 @media (max-width: 768px) {
   .landing-info-subtitle {
-    min-width: 458px;
+    max-width: 458px;
     font-size: 24px;
   }
 }
 @media (max-width: 578px) {
   .landing-info-subtitle {
-    margin-left: 100px;
+    max-width: 328px;
     text-align: center;
-    font-size: 24px;
+    font-size: 18px;
     color: black;
   }
 }
 @media (max-width: 380px) {
   .landing-info-subtitle {
-    font-size: 30px;
+    max-width: 300px;
+    font-size: 16px;
     color: black;
   }
 }
 
 .buttons-landing {
   display: flex;
-}
-@media (max-width: 578px) {
-  .buttons-landing {
-    margin-left: 150px;
-  }
 }
 
 .info-start {
@@ -343,22 +338,24 @@ a {
   background-color: #b4d8d4;
   color: #22343D;
 }
-@media (max-width: 578px) {
-  .info-start {
-    font-size: 18px;
-  }
-}
 @media (max-width: 400px) {
   .info-start {
-    font-size: 20px;
+    max-width: 140px;
+    max-height: 53px;
+    font-size: 14px;
   }
 }
 
 .btn-watch {
   display: flex;
   align-items: center;
-  min-width: 161px;
+  max-width: 161px;
   margin-left: 30px;
+}
+@media (max-width: 400px) {
+  .btn-watch {
+    margin-left: 10px;
+  }
 }
 
 .info-watch {
@@ -368,14 +365,9 @@ a {
   text-decoration-line: underline;
   color: #02897A;
 }
-@media (max-width: 578px) {
-  .info-watch {
-    font-size: 18px;
-  }
-}
 @media (max-width: 400px) {
   .info-watch {
-    font-size: 20px;
+    font-size: 14px;
   }
 }
 
@@ -401,8 +393,8 @@ a {
 }
 
 .landing-img-size {
-  max-width: 600px;
-  min-height: 555px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
