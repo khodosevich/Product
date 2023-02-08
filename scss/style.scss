@@ -527,7 +527,7 @@ button {
     display: flex;
     justify-content: space-between;   
 
-   
+
    
 
 
@@ -536,6 +536,8 @@ button {
         &{
           flex-wrap: wrap;
           margin-bottom: 20px;
+          
+          justify-content: center;
         }
     }
 }
@@ -646,6 +648,8 @@ button {
 .managment-content {
     display: flex;
     align-items: center;
+    justify-content: center;
+
     margin-top: 80px;
    
 
@@ -663,11 +667,14 @@ button {
     max-width: 486px;
     margin-right: 86px;
 
+ 
+
     @media(max-width:1160px){
         &{
 
             margin-right: 70px;
             padding-left: 10px;
+            
         }
     }
     @media(max-width:967px){
@@ -675,6 +682,7 @@ button {
             margin-top: 50px;
             margin-right: 50px;
             order: 2;
+            text-align: center;
         }
     }
     
@@ -789,6 +797,9 @@ button {
 .customer-support-content {
     display: flex;
 
+    align-items: center;
+    justify-content: center;
+
 }
 
 .customer-support-content {    
@@ -796,8 +807,13 @@ button {
     @media(max-width:967px){
         &{
             flex-wrap: wrap;
+            text-align: center;
+            
         }
     }
+
+
+
 
 }
 .customer-support-img {
@@ -812,17 +828,15 @@ button {
     max-width: 486px;
     margin-left: 94px;
 
-
-
     @media(max-width:1160px){
         &{
-
             margin-left: 70px;
             padding-right: 10px;
         }
     }
     @media(max-width:967px){
         &{
+
             margin-top: 50px;
             margin-left: 50px;
             
@@ -871,12 +885,23 @@ button {
 .list-customer-support {
 }
 .customer-support-list {
+
+    @media (max-width:970px) {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
 }
 .customer-support-item {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
     max-width: 430px;
+
 }
 .logo-customer-support-item {
     margin-right: 30px;
@@ -887,4 +912,292 @@ button {
     line-height: 162%;
     
     color: #22343D;
+}
+
+//-------------------process----------------------------//
+
+
+.process-page {
+    background-image: url(../img/process/Bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    min-height: 470px;
+}
+.container {
+}
+
+
+.process-content {
+    padding-top: 52px;
+}
+.process__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.process__info__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    color: #22343D;
+
+    @media (max-width:570px) {
+        font-size: 28px;
+    }
+
+}
+.process__info__subtitle {
+    max-width: 543px;
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;    
+    text-align: center;
+    color: #22343D;
+    
+}
+
+
+
+.process-cards {
+   display: flex;    
+    gap: 170px;
+    justify-content: center;
+
+        @media (max-width:1020px) {
+        flex-wrap: wrap;
+        gap: 40px;
+
+    }  
+    
+    @media (max-width:830px) {
+       
+        gap: 10px;
+
+    }   
+
+}
+
+.process__cards__inline{
+
+    
+
+}
+
+.process__card__item__photo{
+    max-width: 100%;
+    max-height: 100%;
+
+
+    @media (max-width:975px) {
+        max-width: 90%;
+        max-height: 90%;
+    }
+
+    @media (max-width:450px) {
+        max-width: 50%;
+        max-height: 50%;
+        
+    }
+
+}
+
+
+.process__card__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;    
+}
+.process__card__item__text {
+    max-width: 220px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+    border-radius: 26.5px;
+    padding: 15px 24px ;
+ 
+   
+    @media (max-width:975px) {
+        max-width: 200px;
+        text-align: center;
+    }
+
+    @media (max-width:450px) {
+        max-width: 180px;
+
+    }
+
+}
+
+.process__cards__inline__second{
+  
+}
+
+.btn-process-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 63px;
+}
+
+
+.btn-process{
+    background: #02897A;
+    border-radius: 4px;
+    max-width: 220px;
+
+}
+
+.btn-contact-us {   
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 162%;
+    color: #FFFFFF;
+    padding: 15px 30px;
+
+}
+
+
+
+//-------------------ContentsStrategies----------------------------//
+
+
+.contents-strategies-page {
+    padding: 150px 0;
+
+}
+
+
+.strategies__title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 150%;
+    color: #22343D;
+
+    @media (max-width:1151px) {
+       text-align: center;
+       margin: 0 20px;
+    }
+
+    @media (max-width:389px) {
+        font-size: 30px;
+     }
+ 
+
+    @media (max-width:350px) {
+        font-size: 26px;
+     }
+
+
+}
+.strategies__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+    color: #22343D;
+    margin-top: 8px;
+    margin-bottom: 33px;
+
+    @media (max-width:1151px) {
+        text-align: center;
+        margin: 0 20px 30px 20px;
+
+     }
+
+}
+
+
+.strategies-cards {
+    display: flex;
+    gap: 32px;
+
+    @media (max-width:1151px) {
+        gap: 30px;
+        margin: 0 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+}
+.strategies-card__item {
+    max-width: 348px;
+    max-height: 350px;
+   border-radius:8px;
+    border: 0.5px solid #d8d8d8;
+    
+    @media (max-width:382px) {
+        
+        margin-left: 20px;
+        border: 0;
+
+    }
+
+
+
+}
+.photo__strategies {
+   max-width: 100%;
+    max-height: 100%;
+
+    @media (max-width:382px) {
+        max-width: 90%;
+        max-height: 90%;
+    }
+   
+}
+.strategies-card__item__content {
+    margin-bottom: 50px;
+}
+
+.strategies-card__item__data {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #22343D;
+    padding: 24px 80px 12px 24px;
+
+    @media (max-width:382px) {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+}
+.black__item__data {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;    
+    color: #22343D;
+
+}
+.strategies-card__item__title {
+    max-width: 295px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167%;
+    color: #22343D;
+
+    padding: 0px 25px 40px;
+
+    @media (max-width:382px) {
+        font-size: 20px;
+        padding: 0;
+    }
+
+}
+
+.active__strategies-card__item__title{
+    color: #02897A;
+}
+
+.dots {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    @media (max-width:1140px) {
+        display: none;
+    }
+
+}
+.dots-strategy {
 }
