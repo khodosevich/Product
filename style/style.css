@@ -1331,9 +1331,9 @@ a {
     gap: 100px;
   }
 }
-@media (max-width: 980px) {
+@media (max-width: 622px) {
   .footer__content {
-    gap: 100px;
+    gap: 32px;
   }
 }
 
