@@ -532,7 +532,6 @@ a {
     margin-top: 50px;
     margin-right: 50px;
     order: 2;
-    text-align: center;
   }
 }
 @media (max-width: 967px) {
@@ -628,7 +627,6 @@ a {
 @media (max-width: 967px) {
   .customer-support-content {
     flex-wrap: wrap;
-    text-align: center;
   }
 }
 

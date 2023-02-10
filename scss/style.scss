@@ -27,6 +27,7 @@ body {
 	line-height: 1;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    
 }
 ol, ul {
 	list-style: none;
@@ -682,7 +683,7 @@ button {
             margin-top: 50px;
             margin-right: 50px;
             order: 2;
-            text-align: center;
+           
         }
     }
     
@@ -807,7 +808,7 @@ button {
     @media(max-width:967px){
         &{
             flex-wrap: wrap;
-            text-align: center;
+            
             
         }
     }
